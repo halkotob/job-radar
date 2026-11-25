@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+
+# Personal files stay on your machine (this repo is public)
+profile/profile.md
+resume/
+output/*
+!output/.gitkeep
+story-bank/*
+!story-bank/README.md
