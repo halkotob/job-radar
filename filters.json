@@ -1,0 +1,23 @@
+{
+  "_note": "Whole-word, case-insensitive title matching. A job is kept if its title has any include term and no exclude term. Tune freely.",
+  "include_title": [
+    "devops", "sre", "site reliability", "reliability engineer",
+    "cloud engineer", "cloud infrastructure", "infrastructure engineer", "platform engineer",
+    "systems engineer", "production engineer",
+    "build engineer", "release engineer", "build and release", "build & release", "build programmer", "ci engineer",
+    "online services", "live operations", "live ops", "liveops",
+    "technical producer", "associate producer", "production coordinator",
+    "technical program manager", "technical project manager", "tpm",
+    "solutions architect", "solutions engineer", "technical account manager",
+    "qa engineer", "quality assurance engineer", "test engineer", "lqa",
+    "streaming", "video infrastructure", "video engineer", "media engineer", "media platform", "media infrastructure",
+    "audio engineer", "audio software", "audio programmer", "audio platform", "real-time", "realtime",
+    "iot", "embedded software", "firmware",
+    "tools engineer", "pipeline engineer", "creative technologist"
+  ],
+  "exclude_title": [
+    "senior", "sr", "lead", "iii", "iv",
+    "principal", "staff", "director", "head of", "vp", "vice president", "distinguished",
+    "intern", "internship", "phd"
+  ]
+}
