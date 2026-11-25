@@ -1,0 +1,31 @@
+name: Discover feeds
+
+on:
+  workflow_dispatch:
+    inputs:
+      add:
+        description: "Add confirmed companies to companies.json"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe candidate companies
+        run: python3 discover.py ${{ inputs.add && '--add' || '' }}
+      - name: Commit results
+        run: |
+          git config user.name "job-radar-bot"
+          git config user.email "job-radar-bot@users.noreply.github.com"
+          git add companies.json out/discovered.md
+          git diff --cached --quiet || git commit -m "discover: update company feeds"
+          git push
