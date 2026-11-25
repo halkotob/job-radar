@@ -1,27 +1,227 @@
 {
   "_note": "ats = greenhouse | lever | ashby. slug = the company's board name in the feed URL. Add companies by copying a line. Verified live 2026-11-24.",
   "companies": [
-    {"name": "Epic Games",   "ats": "greenhouse", "slug": "epicgames",  "tier": "1-games"},
-    {"name": "Riot Games",   "ats": "greenhouse", "slug": "riotgames",  "tier": "1-games"},
-    {"name": "Roblox",       "ats": "greenhouse", "slug": "roblox",     "tier": "1-games"},
-    {"name": "Bungie",       "ats": "greenhouse", "slug": "bungie",     "tier": "1-games"},
-    {"name": "Scopely",      "ats": "greenhouse", "slug": "scopely",    "tier": "1-games"},
-    {"name": "2K",           "ats": "greenhouse", "slug": "2k",         "tier": "1-games"},
-    {"name": "Twitch",       "ats": "greenhouse", "slug": "twitch",     "tier": "1-media"},
-    {"name": "Spotify",      "ats": "lever",      "slug": "spotify",    "tier": "1-media"},
-    {"name": "Roku",         "ats": "greenhouse", "slug": "roku",       "tier": "1-media"},
-    {"name": "Mux",          "ats": "ashby",      "slug": "mux",        "tier": "2-streaming-infra"},
-    {"name": "Cloudflare",   "ats": "greenhouse", "slug": "cloudflare", "tier": "2-streaming-infra"},
-    {"name": "Fastly",       "ats": "greenhouse", "slug": "fastly",     "tier": "2-streaming-infra"},
-    {"name": "Bitmovin",     "ats": "greenhouse", "slug": "bitmovin",   "tier": "2-streaming-infra"},
-    {"name": "JW Player",    "ats": "greenhouse", "slug": "jwp",        "tier": "2-streaming-infra"},
-    {"name": "Figma",        "ats": "greenhouse", "slug": "figma",      "tier": "2-creative-tools"},
-    {"name": "Descript",     "ats": "greenhouse", "slug": "descript",   "tier": "2-creative-tools"},
-    {"name": "Hudl",         "ats": "greenhouse", "slug": "hudl",       "tier": "3-small-midwest"},
-    {"name": "Cameo",        "ats": "greenhouse", "slug": "cameo",      "tier": "3-small-midwest"},
-    {"name": "SeatGeek",     "ats": "greenhouse", "slug": "seatgeek",   "tier": "3-small-us"},
-    {"name": "Discord",      "ats": "greenhouse", "slug": "discord",    "tier": "3-small-us"},
-    {"name": "SoundCloud",   "ats": "greenhouse", "slug": "soundcloud71", "tier": "3-small-us"},
-    {"name": "Tubi",         "ats": "greenhouse", "slug": "tubitv",     "tier": "3-small-us"}
+    {
+      "name": "Epic Games",
+      "ats": "greenhouse",
+      "slug": "epicgames",
+      "tier": "1-games"
+    },
+    {
+      "name": "Riot Games",
+      "ats": "greenhouse",
+      "slug": "riotgames",
+      "tier": "1-games"
+    },
+    {
+      "name": "Roblox",
+      "ats": "greenhouse",
+      "slug": "roblox",
+      "tier": "1-games"
+    },
+    {
+      "name": "Bungie",
+      "ats": "greenhouse",
+      "slug": "bungie",
+      "tier": "1-games"
+    },
+    {
+      "name": "Scopely",
+      "ats": "greenhouse",
+      "slug": "scopely",
+      "tier": "1-games"
+    },
+    {
+      "name": "2K",
+      "ats": "greenhouse",
+      "slug": "2k",
+      "tier": "1-games"
+    },
+    {
+      "name": "Twitch",
+      "ats": "greenhouse",
+      "slug": "twitch",
+      "tier": "1-media"
+    },
+    {
+      "name": "Spotify",
+      "ats": "lever",
+      "slug": "spotify",
+      "tier": "1-media"
+    },
+    {
+      "name": "Roku",
+      "ats": "greenhouse",
+      "slug": "roku",
+      "tier": "1-media"
+    },
+    {
+      "name": "Mux",
+      "ats": "ashby",
+      "slug": "mux",
+      "tier": "2-streaming-infra"
+    },
+    {
+      "name": "Cloudflare",
+      "ats": "greenhouse",
+      "slug": "cloudflare",
+      "tier": "2-streaming-infra"
+    },
+    {
+      "name": "Fastly",
+      "ats": "greenhouse",
+      "slug": "fastly",
+      "tier": "2-streaming-infra"
+    },
+    {
+      "name": "Bitmovin",
+      "ats": "greenhouse",
+      "slug": "bitmovin",
+      "tier": "2-streaming-infra"
+    },
+    {
+      "name": "JW Player",
+      "ats": "greenhouse",
+      "slug": "jwp",
+      "tier": "2-streaming-infra"
+    },
+    {
+      "name": "Figma",
+      "ats": "greenhouse",
+      "slug": "figma",
+      "tier": "2-creative-tools"
+    },
+    {
+      "name": "Descript",
+      "ats": "greenhouse",
+      "slug": "descript",
+      "tier": "2-creative-tools"
+    },
+    {
+      "name": "Hudl",
+      "ats": "greenhouse",
+      "slug": "hudl",
+      "tier": "3-small-midwest"
+    },
+    {
+      "name": "Cameo",
+      "ats": "greenhouse",
+      "slug": "cameo",
+      "tier": "3-small-midwest"
+    },
+    {
+      "name": "SeatGeek",
+      "ats": "greenhouse",
+      "slug": "seatgeek",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Discord",
+      "ats": "greenhouse",
+      "slug": "discord",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "SoundCloud",
+      "ats": "greenhouse",
+      "slug": "soundcloud71",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Tubi",
+      "ats": "greenhouse",
+      "slug": "tubitv",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Jam City",
+      "ats": "lever",
+      "slug": "jamcity",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Kabam",
+      "ats": "lever",
+      "slug": "kabam",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Naughty Dog",
+      "ats": "greenhouse",
+      "slug": "naughtydog",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Insomniac Games",
+      "ats": "greenhouse",
+      "slug": "insomniac",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Splice",
+      "ats": "greenhouse",
+      "slug": "splice",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Patreon",
+      "ats": "ashby",
+      "slug": "patreon",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Fubo",
+      "ats": "greenhouse",
+      "slug": "fubotv",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Kickstarter",
+      "ats": "greenhouse",
+      "slug": "kickstarter",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Epidemic Sound",
+      "ats": "ashby",
+      "slug": "epidemic-sound",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Crunchyroll",
+      "ats": "greenhouse",
+      "slug": "crunchyroll",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Vox Media",
+      "ats": "greenhouse",
+      "slug": "voxmedia",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Genius Sports",
+      "ats": "greenhouse",
+      "slug": "geniussports",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "WHOOP",
+      "ats": "ashby",
+      "slug": "whoop",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Strava",
+      "ats": "ashby",
+      "slug": "strava",
+      "tier": "3-small-us"
+    },
+    {
+      "name": "Peloton",
+      "ats": "greenhouse",
+      "slug": "peloton",
+      "tier": "3-small-us"
+    }
   ]
 }
