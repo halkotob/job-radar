@@ -40,7 +40,14 @@ jobs:
         if: steps.radar.outputs.new_count != '0'
         env:
           GH_TOKEN: ${{ github.token }}
+          OUT: ${{ steps.radar.outputs.out_file }}
         run: |
+          # GitHub caps issue bodies at 65,536 characters; link to big digests instead
+          if [ "$(wc -c < "$OUT")" -gt 60000 ]; then
+            { echo "Too many matches for one issue. Full digest: ${{ github.server_url }}/${{ github.repository }}/blob/main/$OUT"; echo; grep '^## ' "$OUT" | head -c 55000; } > body.md
+          else
+            cp "$OUT" body.md
+          fi
           gh issue create \
             --title "${{ steps.radar.outputs.new_count }} new jobs - $(date +%Y-%m-%d)" \
-            --body-file "${{ steps.radar.outputs.out_file }}"
+            --body-file body.md
