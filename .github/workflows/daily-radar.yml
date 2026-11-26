@@ -2,6 +2,7 @@ name: Daily job radar
 
 on:
   schedule:
+    - cron: "47 10 * * *"   # backup run: GitHub sometimes starts scheduled runs late or skips them
     - cron: "17 12 * * *"   # 12:17 UTC = 7:17am Detroit (EST); 8:17am during daylight time
   workflow_dispatch: {}      # "Run workflow" button for manual runs
 
