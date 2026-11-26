@@ -159,7 +159,16 @@ def main():
         lines.append("")
     if errors:
         lines += ["## Feeds that failed (check the slug)"] + [f"- {e}" for e in errors] + [""]
-    out_file.write_text("\n".join(lines))
+    if out_file.exists():
+        # A second run on the same day (backup schedule or manual rerun) must never
+        # wipe out the earlier digest. Add only what's new, under its own heading.
+        if new or errors:
+            stamp = dt.datetime.now(dt.timezone.utc).strftime("%H:%M UTC")
+            extra = [f"# Later run ({stamp}) - {len(new)} more new matches", ""] + lines[3:]
+            with open(out_file, "a") as f:
+                f.write("\n" + "\n".join(extra))
+    else:
+        out_file.write_text("\n".join(lines))
 
     if not args.dry_run:
         seen.update(j["key"] for j in new)
